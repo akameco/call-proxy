@@ -20,8 +20,8 @@ const callProxy = require('call-proxy')
 
 let i = 0
 const hello = () => `hello ${++i}`
+const x = callProxy(hello)
 
-const x = hello(func)
 x()
 x()
 x()
