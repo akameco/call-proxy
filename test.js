@@ -6,8 +6,5 @@ test('proxy', () => {
   x()
   x()
   expect(x.__times__).toBe(2)
-  expect(x.__calls__).toEqual([
-    { name: '', result: 1 },
-    { name: '', result: 2 },
-  ])
+  expect(x.__calls__).toEqual([1, 2])
 })

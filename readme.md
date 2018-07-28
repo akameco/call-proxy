@@ -30,9 +30,7 @@ console.log(x.__times__)
 // => 3
 
 console.log(x.__calls__)
-// [ { name: 'hello', result: 'hello 1' },
-//  { name: 'hello', result: 'hello 2' },
-//  { name: 'hello', result: 'hello 3' } ]
+// [ 'hello 1', 'hello 2', 'hello 3' } ]
 ```
 
 ## API

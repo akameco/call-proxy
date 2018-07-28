@@ -3,7 +3,7 @@ module.exports = func => {
   const handler = {
     apply(target, prop, args) {
       const result = Reflect.apply(target, prop, args)
-      calls.push({ name: target.name, result })
+      calls.push(result)
       return result
     },
     get(target, prop, receiver) {
