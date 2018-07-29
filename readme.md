@@ -22,9 +22,9 @@ let i = 0
 const hello = () => `hello ${++i}`
 const x = callProxy(hello)
 
-x()
-x()
-x()
+x() // => hello 1
+x() // => hello 2
+x() // => hello 3
 
 console.log(x.__times__)
 // => 3
